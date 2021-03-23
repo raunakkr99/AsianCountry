@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="5dp"
+app:cardElevation="3dp"
+android:layout_margin="5dp">
+
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/imagebackgroundhelp"
+        android:src="@drawable/ic_baseline_flag_24"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/flagImage"/>
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:padding="2dp"
+        android:layout_toEndOf="@id/flagImage"
+        android:layout_toRightOf="@id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Country Name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/capitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/countryName"
+        android:layout_toEndOf="@id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Capital Name"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/flagImage" />
+
+    <TextView
+        android:id="@+id/regionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subregionName"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/flagImage"
+        android:layout_toRightOf="@id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Region"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/subregionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capitalName"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/flagImage"
+        android:layout_toRightOf="@id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Subregion"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/populationCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regionName"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/flagImage"
+        android:layout_toRightOf="@id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Population"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bordersNmae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/populationCountry"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/flagImage"
+        android:layout_toRightOf="@id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Borders"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/languagesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bordersNmae"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:layout_toEndOf="@+id/flagImage"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/flagImage"
+        android:fontFamily="@font/signika_semibold"
+        android:text="Languages" />
+
+
+
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
